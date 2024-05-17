@@ -2,7 +2,7 @@
 
 # Date:
 
-##                     SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS
+                    SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS
                                                
 # AIM:
 To simulate Logic Gates ,Adders and Subtractors using Vivado 2023.2.
