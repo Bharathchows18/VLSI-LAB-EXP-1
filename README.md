@@ -1,17 +1,17 @@
-# EXP-1
+EXP-1
 
-# Date:
+Date:
 
-                    SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS
+                     SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS
                                                
-# AIM:
+AIM:
 To simulate Logic Gates ,Adders and Subtractors using Vivado 2023.2.
 
-# APPARATUS REQUIRED:
- 
- VIVADO 2023.2
+APPARATUS REQUIRED:
+VIVADO 2023.2
 
-# PROCEDURE:
+
+PROCEDURE:
 
 STEP:1 Launch the Vivado 2023.2 software.
 
@@ -27,11 +27,11 @@ STEP:6 Click “run simulation” in the navigator window and click “Run behav
 
 STEP:7 Verify the output in the simulation window.
 
-# LOGIC GATES LOGIC DIAGRAM:
+LOGIC GATES LOGIC DIAGRAM:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
-#  VERILOG CODE
+ VERILOG CODE
 ```
 module logicgate (a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 input a,b;  
@@ -45,15 +45,15 @@ xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
 ```
-# OUTPUT WAVEFORM
+OUTPUT WAVEFORM
 
 ![328455264-a62e4538-0094-4126-b762-1a1fdc1e8931](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/06f72e07-8cb7-4e6d-8e2c-990099b5f11d)
 
-# HALF ADDER LOGIC DIAGRAM
+HALF ADDER LOGIC DIAGRAM
 
 ![328456195-8dbaa111-3916-4e39-bd03-852cd2d76982](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/4a0e5e6b-09e9-446e-898e-95cb25188dd9)
 
-# VERILOG CODE
+VERILOG CODE
 ```
 module half_adder(a,b,sum,carry);
 
@@ -67,15 +67,15 @@ and g2(carry,a,b);
 
 endmodule
 ```
-# OUTPUT WAVEFORM
+OUTPUT WAVEFORM
 
 ![328456731-d325278a-9829-4e71-b638-70f7285a1dcd](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/ce7fff0a-0336-4f26-a50c-30f7546ffa4e)
 
-# FULL ADDER LOGIC DIAGRAM
+FULL ADDER LOGIC DIAGRAM
 
 ![328457240-8713d8b5-e4b6-4c9d-a00b-41eae22c9a2c](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/6d104c09-f1dc-44c2-9a0b-74dada9d223d)
 
-# VERILOG CODE
+VERILOG CODE
 ```
 module fulladder(a,b,c,sum,carry);
 
@@ -97,15 +97,15 @@ or(carry,w2,w3);
 
 endmodule
 ```
-# OUTPUT WAVEFORM
+OUTPUT WAVEFORM
 
 ![328457694-5c2e8258-da0f-4afd-98eb-f56bd8c7ec30](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/47929d84-382f-47fa-ba5d-87f3822fe301)
 
-# HALF SUBTRACTOR LOGIC DIAGRAM
+HALF SUBTRACTOR LOGIC DIAGRAM
 
 ![328457975-a2ece9c5-3ea5-4656-ac14-51ae2f150460](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/1fb45309-84f4-4293-931c-f70dde701592)
 
-# VERILOG CODE
+VERILOG CODE
 ```
 module halfsub(a,b,diff,borrow);
 
@@ -119,16 +119,16 @@ and(borrow,~a,b);
 
 endmodule
 ```
-# OUTPUT WAVEFORM
+OUTPUT WAVEFORM
 
 ![328458425-4bdf087c-428c-4822-bc46-c5e7dd254033](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/07e60246-60a4-4c39-abad-a7e2435bd9c6)
 
-# FULL SUBTRACTOR LOGIC DIAGRAM
+FULL SUBTRACTOR LOGIC DIAGRAM
 
 ![328458649-1b5c2122-0560-4d64-8eca-093cc6a727ec](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/2c64f656-51b7-4201-9f64-226fb3f8ffc2)
 
 
-# VERILOG CODE
+VERILOG CODE
 ```
 module fs(a,b,bin,d,bout);
 
@@ -150,15 +150,15 @@ or(bout,w3,w2);
 
 endmodule
 ```
-# OUTPUT WAVEFORM
+OUTPUT WAVEFORM
 
 ![328458991-bc8d00b2-5048-427d-bf2c-c02c3045914c](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/fdc2ca0a-34ac-4f3c-bbab-3adbc9ca953e)
 
-# RIPPLE CARRY ADDER LOGIC DIAGRAM
+RIPPLE CARRY ADDER LOGIC DIAGRAM
 ![328459224-a99aff44-dfa3-4e7b-9da8-69196df7a695](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/c7b76933-7856-4d3e-95b3-dda1cc9b0438)
 
 
-# VERILOG CODE
+VERILOG CODE
 ```
 module fulladder(a,b,c,sum,carry);
 input a,b,c;
@@ -187,11 +187,11 @@ fulladder f7(a[6], b[6], w[6], s[6], w[7]);
 fulladder f8(a[7], b[7], w[7], s[7], cout);
 endmodule
 ```
-# OUTPUT WAVEFORM
+OUTPUT WAVEFORM
 
 ![328459610-6bf9e606-80cb-4def-8503-210f60b0fbd4](https://github.com/Bharathchows18/VLSI-LAB-EXP-1/assets/161430676/ea074c85-bba4-4a51-9dcc-92bc3c0b8651)
 
 
-# RESULT:
+RESULT:
 
        simulation of Logic Gates ,Adders and Subtractors using Vivado 2023.2 is verified.
